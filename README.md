@@ -1,5 +1,12 @@
 # buddy-reroll
 
+> [!IMPORTANT]
+> **This project is no longer maintained.**
+> As of Claude Code v2.1.97, the `/buddy` command has been removed.
+> Meet your buddy in [Notch](https://github.com/talkvalue/Buddi) instead — a new home for buddies.
+
+---
+
 Pick the perfect [Claude Code](https://docs.anthropic.com/en/docs/claude-code) `/buddy` companion — any species, rarity, eye, hat, shiny, and stat combination you want.
 
 <img width="1390" height="1010" alt="buddy-reroll screenshot" src="https://github.com/user-attachments/assets/0786f4b8-35e2-4433-90af-25a0d9ebe1a9" />
@@ -12,16 +19,13 @@ Pick the perfect [Claude Code](https://docs.anthropic.com/en/docs/claude-code) `
 
 ```bash
 # Bun (recommended)
-bun install -g buddy-reroll
+bunx buddy-reroll
 
 # npm
-npm install -g buddy-reroll
-
-# No install needed
 npx buddy-reroll
 ```
 
-Bun gives the speediest experience, but Node.js >= 20 works just as well.
+Bun is faster, but Node.js >= 20 produces identical results — no Bun required.
 
 ## Usage
 
@@ -87,12 +91,12 @@ buddy-reroll --unhook  # remove whenever you want
 
 ## How fast is it?
 
-buddy-reroll uses all your CPU cores (up to 8) to find the right companion. Bun is a bit faster because of its native hashing, but both runtimes produce identical results.
+buddy-reroll uses all your CPU cores (up to 8) to find the right companion. Both runtimes use the same wyhash algorithm as Claude Code, so your buddy will always match `/buddy` exactly.
 
-| Runtime | Speed | Notes |
+| Runtime | Speed | Hash |
 |---|---|---|
-| Bun | Faster | Recommended |
-| Node.js >= 20 | Slightly slower | Works great too |
+| Bun | Faster (native `Bun.hash`) | wyhash ✓ |
+| Node.js >= 20 | Slightly slower (pure JS) | wyhash ✓ |
 
 ## Requirements
 

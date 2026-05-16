@@ -1,5 +1,34 @@
 # Changelog
 
+## [0.3.8](https://github.com/grayashh/buddy-reroll/compare/v0.3.7...v0.3.8) (2026-04-07)
+
+
+### Bug Fixes
+
+* detect Claude runtime and use matching hash function ([6c29191](https://github.com/grayashh/buddy-reroll/commit/6c291918028783951cde9274763848c442b9b219)), closes [#17](https://github.com/grayashh/buddy-reroll/issues/17)
+
+## [0.3.7](https://github.com/grayashh/buddy-reroll/compare/v0.3.6...v0.3.7) (2026-04-05)
+
+
+### Bug Fixes
+
+* replace misleading percentage progress with time-based display ([5575e2a](https://github.com/grayashh/buddy-reroll/commit/5575e2ade770e1ecc2bc671dda484322d5fc2e3f))
+
+## [0.3.6](https://github.com/grayashh/buddy-reroll/compare/v0.3.5...v0.3.6) (2026-04-05)
+
+
+### Bug Fixes
+
+* findCurrentSalt accepts purely-alphabetic patched salts ([#12](https://github.com/grayashh/buddy-reroll/issues/12)) ([209c598](https://github.com/grayashh/buddy-reroll/commit/209c598fb66ec61321e5b0170fa2060b0f97ebc3))
+* revert to wyhash — Claude Code binary uses Bun.hash, not FNV-1a ([0a68c02](https://github.com/grayashh/buddy-reroll/commit/0a68c026ca407a670249fcb2be13983f3aa46c7a))
+
+## [0.3.5](https://github.com/grayashh/buddy-reroll/compare/v0.3.4...v0.3.5) (2026-04-04)
+
+
+### Bug Fixes
+
+* use FNV-1a hash to match Claude Code binary ([aa77a3a](https://github.com/grayashh/buddy-reroll/commit/aa77a3a639deb40beb2738a1e14c54bd9a7606c7))
+
 ## [0.3.4](https://github.com/grayashh/buddy-reroll/compare/v0.3.3...v0.3.4) (2026-04-02)
 
 
